@@ -75,7 +75,7 @@ padding: 5%;
       transform: translate(-100%,0);
       transition: all .3s ease-in-out;
     }
-      /*button div (button text before hover)*/
+     
       button:hover div{opacity: 0; transform: translate(100%,0)}
       button div{
         text-transform: uppercase;
