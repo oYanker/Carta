@@ -1,0 +1,86 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: #6C7A89;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center
+  }
+  .box {
+   border-radius:10px;
+  width: 500px;
+  height: 500px;
+  background: #fff;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  body {
+  margin: 0px;
+  }
+  p{
+
+
+    padding: 20%;
+
+
+
+    
+  }
+  h1{
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+font-family: monospace;
+position: absolute;
+margin: 3%;
+top: 15%;
+
+
+    
+  }
+  pre{
+
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  }
+  .dot{
+    font-size: 83%;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+padding: 5%;
+
+
+
+  }
+  button:hover{cursor: pointer}
+    button {
+      background: transparent; outline: none;
+      position: relative;
+      border: 2px solid #111;
+      padding: 15px 50px;
+      overflow: hidden;
+      border-radius: 5px;
+      
+    }
+    button:hover:before{opacity: 1; transform: translate(0,0);}
+    button:before{
+      content: attr(data-hover);
+      position: absolute;
+      top: 1.1em; left: 0;
+      width: 100%;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 800;
+      font-size: .8em;
+      opacity: 0;
+      transform: translate(-100%,0);
+      transition: all .3s ease-in-out;
+    }
+      /*button div (button text before hover)*/
+      button:hover div{opacity: 0; transform: translate(100%,0)}
+      button div{
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 800;
+        font-size: .8em;
+        transition: all .3s ease-in-out;
+      }
